@@ -1,68 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Your Name</title>
+    <title>ثعلب مصري - محفظة احترافية</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><a href="#about">Your Name</a></div>
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/photo/2017/01/27/15/23/fox-2016849_1280.png" alt="ثعلب مصري" class="fox-logo"> ثعلب مصري
+        </div>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">نبذة</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#portfolio">الأعمال</a></li>
+            <li><a href="#gallery">المعرض</a></li>
+            <li><a href="#testimonials">آراء العملاء</a></li>
+            <li><a href="#contact">تواصل</a></li>
         </ul>
     </nav>
 
-    <section id="about" class="section">
-        <h1>About Me</h1>
-        <img src="https://via.placeholder.com/120" alt="Profile" class="profile-img">
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://cdn.pixabay.com/photo/2017/01/27/15/23/fox-2016849_1280.png" alt="ثعلب مصري" class="hero-fox">
+            <h1>مرحبًا بك في عالم الثعلب المصري</h1>
+            <p>مصمم محتوى، ومبدع أفكار، وخبير حلول رقمية بلمسة ذكية</p>
+            <a href="#contact" class="cta-btn">ابدأ التحدث مع الثعلب</a>
+        </div>
+    </header>
+
+    <section id="about" class="section about-section">
+        <h2>من هو الثعلب المصري؟</h2>
         <p>
-            A brief introduction about yourself.  
-            Update this text with your professional summary, expertise, and interests.
+            الثعلب المصري رمز للذكاء والعمل المبدع. خبرة سنوات في التحليل، التصاميم، كتابة المحتوى الرقمي، وصناعة حلول إبداعية لتعزيز قيمة العلامة التجارية في السوق العربي.
         </p>
     </section>
 
-    <section id="services" class="section">
-        <h2>Services</h2>
-        <ul class="services-list">
-            <li>
-                <h3>Service 1</h3>
-                <p>Description of your first service.</p>
-            </li>
-            <li>
-                <h3>Service 2</h3>
-                <p>Description of your second service.</p>
-            </li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="section">
-        <h2>Portfolio</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-card">
-                <img src="https://via.placeholder.com/300x180" alt="Project">
-                <h4>Project Title</h4>
-                <p>Short description of the project.</p>
+    <section id="services" class="section services-section">
+        <h2>الخدمات</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>تصميم الهوية البصرية</h3>
+                <p>استشارات وبراندينج بلون الثعلب وإبداعاته.</p>
             </div>
-            <!-- Add more portfolio-card divs as needed -->
+            <div class="service-card">
+                <h3>كتابة المحتوى التسويقي</h3>
+                <p>نصوص ترويجية تدفع نتائجك للأمام بخبرة الثعلب.</p>
+            </div>
+            <div class="service-card">
+                <h3>تطوير مواقع شخصية</h3>
+                <p>مواقع عصرية سهلة الاستخدام وقوية التأثير.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
+    <section id="portfolio" class="section portfolio-section">
+        <h2>الأعمال المختارة</h2>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="https://via.placeholder.com/320x200?text=Project+1" alt="مشروع 1">
+                <h4>مشروع تصميم براند</h4>
+                <p>براند متكامل لأحد العملاء في السعودية.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src="https://via.placeholder.com/320x200?text=Project+2" alt="مشروع 2">
+                <h4>موقع تسويقي متجاوب</h4>
+                <p>تصميم موقع بفكر مختلف وتجربة مستخدم ساحرة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+        <h2>المعرض</h2>
+        <div class="gallery-items">
+            <img src="https://cdn.pixabay.com/photo/2017/03/14/11/35/fox-2147713_640.jpg" alt="ثعلب في الطبيعة">
+            <img src="https://cdn.pixabay.com/photo/2016/02/24/17/17/fox-1229886_640.jpg" alt="ثعلب فني">
+        </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+        <h2>آراء العملاء</h2>
+        <div class="testimonial">
+            <blockquote>
+                "شخصية احترافية، أفكار خارج الصندوق، نتائج تفوق التوقعات."
+                <footer>- عميل سعودي</footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                "الثعلب المصري هو سر نجاح حملتنا الرقمية!"
+                <footer>- مدير تسويق</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2>ابدأ التواصل مع الثعلب</h2>
         <form id="contactForm">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
+            <input type="text" name="name" placeholder="الاسم" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <textarea name="message" placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
         </form>
     </section>
 
-    <footer>
-        <p>� 2025 Your Name. All rights reserved.</p>
+    <footer class="footer">
+        <p>© 2025 الثعلب المصري</p>
     </footer>
     <script src="script.js"></script>
 </body>
