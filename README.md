@@ -7,6 +7,7 @@
 [العربية](#العربية) · [English](#english)
 
 [![Live Site](https://img.shields.io/badge/live-omar--hussein--portfolio.vercel.app-14b8a6?style=flat-square)](https://omar-hussein-portfolio.vercel.app/)
+[![GitHub](https://img.shields.io/badge/repo-Omarhussien2%2Fportfolio-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Omarhussien2/portfolio)
 [![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
