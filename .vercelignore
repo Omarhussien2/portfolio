@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.git/
+artifacts/
+فريلانس/
+/*.png
+/test-video.html
+/WORK-CHECKLIST.md
+output/
+tmp/
+
+/fonts/
+
+/docs/
+/AGENTS.md

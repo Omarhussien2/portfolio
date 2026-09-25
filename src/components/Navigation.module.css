@@ -1,0 +1,222 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.present {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.scene {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(min(88vw, 74rem) + clamp(5rem, 10vw, 9rem));
+  height: 100%;
+  will-change: transform;
+}
+
+.panel {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: min(88vw, 74rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  background: #090909;
+  color: #f8f7f3;
+}
+
+.wave {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: clamp(5rem, 10vw, 9rem);
+  height: 100%;
+  fill: #090909;
+  pointer-events: none;
+}
+
+.closeButton {
+  position: fixed;
+  top: 50%;
+  left: min(calc(88vw - 1.45rem), calc(74rem - 1.45rem));
+  z-index: 2;
+  display: grid;
+  width: 2.9rem;
+  height: 2.9rem;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 34%);
+  border-radius: 999px;
+  background: #090909;
+  color: #fff;
+  transform: translateY(-50%);
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.closeButton span {
+  position: absolute;
+  width: 1.15rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.closeButton span:first-child {
+  transform: rotate(45deg);
+}
+
+.closeButton span:last-child {
+  transform: rotate(-45deg);
+}
+
+.closeButton:hover,
+.closeButton:focus-visible {
+  border-color: #fff;
+  background: #fff;
+  color: #090909;
+}
+
+.closeButton:focus-visible,
+.link:focus-visible,
+.contact a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.content {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.38fr);
+  align-items: end;
+  gap: clamp(2rem, 6vw, 6rem);
+  width: 100%;
+  min-height: 100%;
+  padding: clamp(5rem, 10vh, 7rem) clamp(1.5rem, 6vw, 6rem) clamp(2rem, 7vh, 4.5rem);
+  direction: inherit;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(1rem, 2vh, 1.5rem);
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  width: fit-content;
+  color: #f8f7f3;
+  font-family: var(--font-amiri), Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4.6vw, 3.3rem);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
+  text-decoration: none;
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.link::after {
+  content: attr(data-index);
+  font-family: Arial, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  opacity: 0.45;
+  transform: translateY(-0.7em);
+}
+
+.links:has(.link:hover) .link:not(:hover) {
+  opacity: 0.32;
+}
+
+.link:hover {
+  transform: translateX(-0.35rem);
+}
+
+.contact {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding-bottom: 0.4rem;
+  font-size: clamp(0.88rem, 1.25vw, 1rem);
+}
+
+.contact p {
+  margin: 0 0 0.4rem;
+  color: rgb(255 255 255 / 48%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.contact a {
+  max-width: 100%;
+  color: inherit;
+  text-decoration-color: rgb(255 255 255 / 30%);
+  text-underline-offset: 0.3em;
+  overflow-wrap: anywhere;
+}
+
+.contact a:hover {
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 700px) {
+  .scene {
+    width: calc(100vw + 5rem);
+  }
+
+  .panel {
+    width: 100vw;
+  }
+
+  .wave {
+    width: 5rem;
+  }
+
+  .closeButton {
+    top: 1.1rem;
+    left: 1.1rem;
+    transform: none;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    align-content: space-between;
+    gap: 2.5rem;
+    padding-top: 5.5rem;
+  }
+}
+
+@media (max-height: 620px) {
+  .content {
+    align-items: start;
+    gap: 2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .link {
+    font-size: clamp(1.75rem, 7vh, 2.8rem);
+    line-height: 1.3;
+  }
+
+  .contact {
+    font-size: 0.84rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .closeButton,
+  .link {
+    transition-duration: 0.01ms;
+  }
+}

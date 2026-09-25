@@ -1,0 +1,18 @@
+# Normalize line endings; keep binaries untouched
+* text=auto
+
+# Images & media
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg text
+*.mp4 binary
+*.webm binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.otf binary
+*.ttf binary

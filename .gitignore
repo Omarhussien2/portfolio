@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Next.js build output & caches
+.next/
+out/
+
+# Build/test scratch folders
+output/
+tmp/
+
+# Deployment linking (personal org/project ids)
+.vercel/
+
+# ── Internal materials — never publish ─────────────────────
+# Raw client source materials (private)
+فريلانس/
+# Working checklists, review evidence, internal handoff docs
+artifacts/
+docs/
+WORK-CHECKLIST.md
+AGENTS.md
+# Original commercial font binaries (only the subset web fonts in public/ are used)
+fonts/
+# Local verification screenshots & test pages (root level only)
+/*.png
+/test-video.html
+
+# Tooling runs
+.delegate_runs/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs & OS artifacts
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
